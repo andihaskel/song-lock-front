@@ -1,0 +1,117 @@
+/*!
+
+=========================================================
+* Paper Dashboard React - v1.1.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/paper-dashboard-react
+* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+
+* Licensed under MIT (https://github.com/creativetimofficial/paper-dashboard-react/blob/master/LICENSE.md)
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+*/
+import Dashboard from "views/Dashboard.jsx";
+import Notifications from "views/Notifications.jsx";
+import Icons from "views/Icons.jsx";
+import InboxIcon from '@material-ui/icons/Inbox';
+import Typography from "views/Typography.jsx";
+import TableList from "views/Tables.jsx";
+import Maps from "views/Map.jsx";
+import UserPage from "views/User.jsx";
+import OrderListPage from "views/OrderList.jsx";
+import SongsList from "views/SongsList.jsx";
+import ShareSong from "views/ShareSong.jsx";
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import SignInPage from './views/signIn/SignIn.jsx';
+
+
+import UpgradeToPro from "views/Upgrade.jsx";
+
+var routes = [
+  // {
+  //   path: "/dashboard",
+  //   name: "Dashboard",
+  //   icon: "nc-icon nc-bank",
+  //   component: Dashboard,
+  //   layout: "/admin"
+  // },
+  // {
+  //   path: "/icons",
+  //   name: "Icons",
+  //   icon: "nc-icon nc-diamond",
+  //   component: Icons,
+  //   layout: "/admin"
+  // },
+  // {
+  //   path: "/maps",
+  //   name: "Maps",
+  //   icon: "nc-icon nc-pin-3",
+  //   component: Maps,
+  //   layout: "/admin"
+  // },
+  // {
+  //   path: "/notifications",
+  //   name: "Notifications",
+  //   icon: "nc-icon nc-bell-55",
+  //   component: Notifications,
+  //   layout: "/admin"
+  // },
+ 
+  // {
+  //   path: "/user-page",
+  //   name: "Orders",
+  //   icon: "nc-icon nc-cart-simple",
+  //   component: OrderPage,
+  //   layout: "/admin"
+  // },
+  {
+    path: "/orders",
+    name: "Releases",
+    icon: "nc-icon nc-cart-simple",
+    component: OrderListPage,
+    layout: "/admin"
+  },
+  {
+    path: "/songs",
+    name: "Songs",
+    icon: "nc-icon nc-app",
+    component: SongsList,
+    layout: "/admin"
+  },
+  {
+    path: "/share-song",
+    name: "Share a song",
+    icon: "nc-icon nc-app",
+    component: ShareSong,
+    layout: "/admin"
+  },
+  {
+    path: "/user-page",
+    name: "Account Settings",
+    icon: "nc-icon nc-single-02",
+    component: UserPage,
+    layout: "/admin"
+  },
+  // {
+  //   path: "/typography",
+  //   name: "Typography",
+  //   icon: "nc-icon nc-caps-small",
+  //   component: Typography,
+  //   layout: "/admin"
+  // },
+  {
+    pro: true,
+    path: "/sign-in",
+    name: "Sign Out",
+    icon: "fa fa-sign-out-alt",
+    component: SignInPage,
+    layout: ""
+  }
+];
+export default routes;
